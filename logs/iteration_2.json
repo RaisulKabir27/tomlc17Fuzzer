@@ -1,0 +1,179 @@
+{
+  "version": 2,
+  "generation": {
+    "usage": {
+      "input_tokens": 10002,
+      "output_tokens": 2121,
+      "thought_tokens": 6196,
+      "total_tokens": 18319
+    },
+    "cost_usd": 0.005682,
+    "malformed_weight_set": 0.2,
+    "max_depth_set": 16,
+    "sections_sent": [
+      "capability",
+      "signals",
+      "structural",
+      "malformed_exploration",
+      "max_depth",
+      "weight"
+    ],
+    "prompt_chars": 34348,
+    "base_version": 1,
+    "retry_used": false
+  },
+  "valid_path": {
+    "rate": 0.98,
+    "isolated": true,
+    "top_rejections": [
+      [
+        "DUPLICATE_KEY",
+        1
+      ]
+    ]
+  },
+  "campaign": {
+    "records_count": 500
+  },
+  "best_version": 2,
+  "best_score": [
+    0,
+    1,
+    29,
+    68
+  ],
+  "observation": {
+    "accepted": 363,
+    "rejected": 137,
+    "crashed": 0,
+    "acceptance_rate": 0.726,
+    "validity_rate": 0.726,
+    "new_kpath_count": 0,
+    "rare_kpath_count": 0
+  },
+  "signals": [
+    {
+      "type": "NEW_ERROR",
+      "priority": 3
+    },
+    {
+      "type": "NEW_ERROR",
+      "priority": 3
+    },
+    {
+      "type": "NEW_ERROR",
+      "priority": 3
+    }
+  ],
+  "instructions": [
+    "A new parser-rejection category (ARRAY_TABLE_MISMATCH) appeared. Example that triggered it: `[none]\\n[[none]]`. Probe this boundary: generate NEAR-VALID TOML variants that stay close to valid but vary the structure, rather than repeating the same malformed pattern.",
+    "A new parser-rejection category (BAD_ESCAPE) appeared. Example that triggered it: `x = \"\\z\"`. Probe this boundary: generate NEAR-VALID TOML variants that stay close to valid but vary the structure, rather than repeating the same malformed pattern.",
+    "A new parser-rejection category (BAD_HEX_ESCAPE) appeared. Example that triggered it: `x = \"\\xZZ\"`. Probe this boundary: generate NEAR-VALID TOML variants that stay close to valid but vary the structure, rather than repeating the same malformed pattern."
+  ],
+  "malformed_channel": "active (valid_path)",
+  "gate_rate": 0.98,
+  "gate_basis": "valid_path",
+  "malformed_exploration": {
+    "this_round": {
+      "DUPLICATE_KEY": 79,
+      "BAD_HEX_ESCAPE": 4,
+      "ARRAY_TABLE_MISMATCH": 4,
+      "BAD_ESCAPE": 4,
+      "FLOAT_PARSE": 2,
+      "TOO_MANY_KEY_PARTS": 21,
+      "INT_PARSE": 3,
+      "INLINE_TABLE_EXTENSION": 3,
+      "COMMA_ERROR": 4,
+      "TABLE_CONFLICT": 12,
+      "MISSING_KEY": 1
+    },
+    "categories_reached": 11,
+    "categories_total": 32,
+    "coverage_fraction": 0.344,
+    "unexplored": [
+      "ARRAY_PARSE",
+      "BAD_CONTROL_CHAR_COMMENT",
+      "CANNOT_EXTEND_ARRAY",
+      "CONTAINER_TOO_LARGE",
+      "DOTTED_KEY_TYPE",
+      "ENDL_EXPECTED",
+      "EXPECT_EQUALS",
+      "INTERNAL_ERROR",
+      "INVALID_BOOLEAN",
+      "INVALID_DATETIME",
+      "INVALID_STRING_CHAR",
+      "INVALID_VALUE",
+      "MISSING_BRACKET",
+      "MISSING_VALUE",
+      "OUT_OF_MEMORY",
+      "STACK_OVERFLOW",
+      "TABLE_LOCATION",
+      "UNEXPECTED_NEWLINE",
+      "UNTERMINATED",
+      "UNTERMINATED_STRING",
+      "UTF8_ERROR"
+    ]
+  },
+  "structural_metrics": {
+    "inputs_measured": 363,
+    "depth": {
+      "max": 29,
+      "mean": 8.28,
+      "distribution": {
+        "0": 46,
+        "6-10": 53,
+        "11-20": 121,
+        "21-27": 18,
+        "1-2": 89,
+        "3-5": 32,
+        "28-33": 4
+      }
+    },
+    "container_size": {
+      "max": 5,
+      "mean": 2.7,
+      "distribution": {
+        "0": 46,
+        "1-5": 317
+      }
+    },
+    "dotted_key_parts": {
+      "max": 2,
+      "distribution": {
+        "1": 111,
+        "2": 252
+      }
+    },
+    "document_length": {
+      "max": 1309,
+      "mean": 246.8
+    }
+  },
+  "capability": {
+    "malformed_count": 12,
+    "missing_core": [
+      "valid_leaf",
+      "valid_value"
+    ],
+    "missing_malformed": [
+      "_malformed_dotted_key_dup",
+      "_malformed_table_conflict"
+    ],
+    "uses_st_recursive": true,
+    "forbidden_imports": [],
+    "regressions": []
+  },
+  "next_max_depth": 32,
+  "next_malformed_weight": 0.2,
+  "feedback_sections": {
+    "capability": true,
+    "signals": 3,
+    "structural": true,
+    "malformed_exploration": true
+  },
+  "elapsed_seconds": 55.2,
+  "budget": {
+    "cost_usd": 0.009699,
+    "total_tokens": 32538
+  }
+}

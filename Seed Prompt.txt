@@ -1,0 +1,668 @@
+You are writing a Python module that uses the Hypothesis library to GENERATE
+TOML documents (as text strings). These strings will be fed to the tomlc17 TOML
+parser (built with sanitizers) to find crashes. Think carefully before writing
+code. Return ONLY the Python module — no markdown fences, no explanation.
+# GOAL
+The strategy must primarily produce STRUCTURALLY RICH, grammar-valid TOML text — deeply nested and exercising the full grammar — while deliberately including a controlled minority of near-valid-but-malformed inputs targeting documented tomlc17 rejection boundaries. The goal is to maximize parser coverage and structural diversity without degenerating into mostly malformed or random text.
+# GRAMMAR (the language to generate)
+## Lexer
+lexer grammar TomlLexer;
+// =============================================================================
+// Adapted TOML 1.1 lexer for tomlc17 (commit 75565ea, release R260618).
+// Base: grammars-v4 TOML grammar.
+// Changes from the previous adapted version are marked with  [FIX n]  and are
+// documented in FIXES.md. Ranges for Unicode bare keys and string control-char
+// restrictions are taken from tomlc17's own source (is_unicode_bare_key_char()
+// and is_valid_char()), so this describes what tomlc17 ACTUALLY accepts.
+// =============================================================================
+WS : [ \t]+ -> skip;
+NL : ('\r'? '\n')+;
+COMMENT : '#' ~[\r\n]*;
+L_BRACKET : '[';
+DOUBLE_L_BRACKET : '[[';
+R_BRACKET : ']';
+DOUBLE_R_BRACKET : ']]';
+EQUALS : '=' -> pushMode(SIMPLE_VALUE_MODE);
+DOT : '.';
+COMMA : ',';
+fragment DIGIT : [0-9];
+fragment ALPHA : [A-Za-z];
+// TOML 1.1 escapes: '\e' and '\xHH' added; forward slash '\/' removed
+// (TOML 1.0 removed '/' as an escapable char, so the grammar must not allow it).
+fragment ESC
+    : '\\' (["\\bfnrt] | 'e' | 'x' HEX_DIGIT HEX_DIGIT | UNICODE | EX_UNICODE)
+    ;
+fragment UNICODE
+    : 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
+    ;
+fragment EX_UNICODE
+    : 'U' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
+      HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
+    ;
+// Control-character restrictions.
+// tomlc17's is_valid_char() allows 0x20-0x7E, high-bit (0x80+), plus tab (0x09).
+// It rejects 0x00-0x08, 0x0A-0x1F, and 0x7F inside single-line strings.
+// Basic strings additionally forbid raw CR/LF and the backslash/quote.
+BASIC_STRING
+    : '"' (ESC | ~["\\\r\n\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F])*? '"'
+    ;
+// Literal strings: no escaping, but same control-char rejection and no
+// raw newline. Previously this allowed any control char except quote/CR/LF.
+LITERAL_STRING
+    : '\'' ~['\r\n\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]*? '\''
+    ;
+// Unicode bare keys (TOML 1.1). Ranges copied from tomlc17's
+// is_unicode_bare_key_char(). Previously only [A-Za-z0-9_-] was allowed.
+fragment BARE_KEY_CHAR
+    : [A-Za-z0-9_-]
+    | [\u00B2\u00B3\u00B9\u00BC-\u00BE\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u037D\u037F-\u1FFF]
+    | [\u200C\u200D\u203F\u2040\u2070-\u218F\u2460-\u24FF\u2C00-\u2FEF\u3001-\uD7FF]
+    | [\uF900-\uFDCF\uFDF0-\uFFFD]
+    | [\u{10000}-\u{EFFFF}]
+    ;
+UNQUOTED_KEY
+    : BARE_KEY_CHAR+
+    ;
+mode SIMPLE_VALUE_MODE;
+VALUE_WS : WS -> skip;
+// Reverted from pushMode() to mode(). SIMPLE_VALUE_MODE is a one-shot
+// mode pushed by '='. A container value must REPLACE it (mode()), not stack on
+// top of it (pushMode()); otherwise the one-shot mode is left stranded on the
+// mode stack and nesting drifts. The container's own closer pops the context
+// saved by the enclosing '='. This makes nested inline tables / arrays balance.
+L_BRACE
+    : '{' -> mode(INLINE_TABLE_MODE)
+    ;
+// [FIX 1] Same revert for arrays: mode() not pushMode().
+ARRAY_START
+    : L_BRACKET -> type(L_BRACKET), mode(ARRAY_MODE)
+    ;
+BOOLEAN
+    : ('true' | 'false') -> popMode
+    ;
+
+fragment ML_ESC
+    : '\\' '\r'? '\n'
+    | ESC
+    ;
+
+VALUE_BASIC_STRING
+    : BASIC_STRING -> type(BASIC_STRING), popMode
+    ;
+
+// [FIX 4] Multi-line basic string: allow tab/newline, reject other control chars.
+ML_BASIC_STRING
+    : '"""' (ML_ESC | ~["\\\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F])*? '"""' -> popMode
+    ;
+
+VALUE_LITERAL_STRING
+    : LITERAL_STRING -> type(LITERAL_STRING), popMode
+    ;
+
+// [FIX 4] Multi-line literal string: allow tab/newline, reject other control chars.
+ML_LITERAL_STRING
+    : '\'\'\'' (~[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F])*? '\'\'\'' -> popMode
+    ;
+
+fragment EXP
+    : ('e' | 'E') [+-]? ZERO_PREFIXABLE_INT
+    ;
+
+fragment ZERO_PREFIXABLE_INT
+    : DIGIT (DIGIT | '_' DIGIT)*
+    ;
+
+fragment FRAC
+    : '.' ZERO_PREFIXABLE_INT
+    ;
+
+FLOAT
+    : DEC_INT (EXP | FRAC EXP?) -> popMode
+    ;
+
+INF
+    : [+-]? 'inf' -> popMode
+    ;
+
+NAN
+    : [+-]? 'nan' -> popMode
+    ;
+
+fragment HEX_DIGIT : [A-Fa-f] | DIGIT;
+fragment DIGIT_1_9 : [1-9];
+fragment DIGIT_0_7 : [0-7];
+fragment DIGIT_0_1 : [0-1];
+
+DEC_INT
+    : [+-]? (DIGIT | (DIGIT_1_9 (DIGIT | '_' DIGIT)+)) -> popMode
+    ;
+
+HEX_INT
+    : '0x' HEX_DIGIT (HEX_DIGIT | '_' HEX_DIGIT)* -> popMode
+    ;
+
+OCT_INT
+    : '0o' DIGIT_0_7 (DIGIT_0_7 | '_' DIGIT_0_7)* -> popMode
+    ;
+
+BIN_INT
+    : '0b' DIGIT_0_1 (DIGIT_0_1 | '_' DIGIT_0_1)* -> popMode
+    ;
+fragment YEAR : DIGIT DIGIT DIGIT DIGIT;
+fragment MONTH : DIGIT DIGIT;
+fragment DAY : DIGIT DIGIT;
+fragment DELIM : 'T' | 't' | ' ';
+fragment HOUR : DIGIT DIGIT;
+fragment MINUTE : DIGIT DIGIT;
+fragment SECOND : DIGIT DIGIT;
+fragment SECFRAC : '.' DIGIT+;
+fragment NUMOFFSET : ('+' | '-') HOUR ':' MINUTE;
+fragment OFFSET : 'Z' | NUMOFFSET;
+
+// TOML 1.1: seconds may be omitted.
+fragment PARTIAL_TIME
+    : HOUR ':' MINUTE (':' SECOND SECFRAC?)?
+    ;
+
+fragment FULL_DATE : YEAR '-' MONTH '-' DAY;
+fragment FULL_TIME : PARTIAL_TIME OFFSET;
+
+OFFSET_DATE_TIME : FULL_DATE DELIM FULL_TIME -> popMode;
+LOCAL_DATE_TIME : FULL_DATE DELIM PARTIAL_TIME -> popMode;
+LOCAL_DATE : FULL_DATE -> popMode;
+LOCAL_TIME : PARTIAL_TIME -> popMode;
+
+mode INLINE_TABLE_MODE;
+
+INLINE_TABLE_WS : [ \t]+ -> skip;
+// [FIX 5] TOML 1.1: newlines/comments allowed inside inline tables (multi-line).
+INLINE_TABLE_NL : NL -> type(NL);
+INLINE_TABLE_COMMENT : COMMENT -> type(COMMENT);
+
+INLINE_TABLE_KEY_DOT : DOT -> type(DOT);
+INLINE_TABLE_COMMA : COMMA -> type(COMMA);
+
+R_BRACE : '}' -> popMode;
+
+// Nested inline table: pushMode is CORRECT here (we are already inside a
+// container mode, so we add a level rather than replacing a one-shot value mode).
+INLINE_TABLE_L_BRACE
+    : '{' -> type(L_BRACE), pushMode(INLINE_TABLE_MODE)
+    ;
+
+INLINE_TABLE_L_BRACKET
+    : '[' -> type(L_BRACKET), pushMode(ARRAY_MODE)
+    ;
+
+INLINE_TABLE_KEY_BASIC_STRING
+    : BASIC_STRING -> type(BASIC_STRING)
+    ;
+
+INLINE_TABLE_KEY_LITERAL_STRING
+    : LITERAL_STRING -> type(LITERAL_STRING)
+    ;
+
+INLINE_TABLE_KEY_UNQUOTED
+    : UNQUOTED_KEY -> type(UNQUOTED_KEY)
+    ;
+
+INLINE_TABLE_EQUALS
+    : EQUALS -> type(EQUALS), pushMode(SIMPLE_VALUE_MODE)
+    ;
+
+mode ARRAY_MODE;
+
+ARRAY_WS : [ \t]+ -> skip;
+ARRAY_NL : NL -> type(NL);
+ARRAY_COMMENT : COMMENT -> type(COMMENT);
+ARRAY_COMMA : COMMA -> type(COMMA);
+
+// Nested container inside an array: pushMode is CORRECT (adding a level).
+ARRAY_INLINE_TABLE_START
+    : '{' -> type(L_BRACE), pushMode(INLINE_TABLE_MODE)
+    ;
+
+NESTED_ARRAY_START
+    : '[' -> type(L_BRACKET), pushMode(ARRAY_MODE)
+    ;
+
+ARRAY_END
+    : ']' -> type(R_BRACKET), popMode
+    ;
+
+ARRAY_BOOLEAN : BOOLEAN -> type(BOOLEAN);
+ARRAY_BASIC_STRING : BASIC_STRING -> type(BASIC_STRING);
+ARRAY_ML_BASIC_STRING : ML_BASIC_STRING -> type(ML_BASIC_STRING);
+ARRAY_LITERAL_STRING : LITERAL_STRING -> type(LITERAL_STRING);
+ARRAY_ML_LITERAL_STRING : ML_LITERAL_STRING -> type(ML_LITERAL_STRING);
+
+ARRAY_FLOAT : FLOAT -> type(FLOAT);
+ARRAY_INF : INF -> type(INF);
+ARRAY_NAN : NAN -> type(NAN);
+
+ARRAY_DEC_INT : DEC_INT -> type(DEC_INT);
+ARRAY_HEX_INT : HEX_INT -> type(HEX_INT);
+ARRAY_OCT_INT : OCT_INT -> type(OCT_INT);
+ARRAY_BIN_INT : BIN_INT -> type(BIN_INT);
+
+ARRAY_OFFSET_DATE_TIME : OFFSET_DATE_TIME -> type(OFFSET_DATE_TIME);
+ARRAY_LOCAL_DATE_TIME : LOCAL_DATE_TIME -> type(LOCAL_DATE_TIME);
+ARRAY_LOCAL_DATE : LOCAL_DATE -> type(LOCAL_DATE);
+ARRAY_LOCAL_TIME : LOCAL_TIME -> type(LOCAL_TIME);
+
+## Parser
+parser grammar TomlParser;
+
+options {
+    tokenVocab = TomlLexer;
+}
+
+document
+    : expression (NL expression)* EOF
+    ;
+
+expression
+    : key_value comment
+    | table comment
+    | comment
+    ;
+
+comment
+    : COMMENT?
+    ;
+
+key_value
+    : key EQUALS value
+    ;
+
+key
+    : simple_key
+    | dotted_key
+    ;
+
+simple_key
+    : quoted_key
+    | unquoted_key
+    ;
+
+unquoted_key
+    : UNQUOTED_KEY
+    ;
+
+quoted_key
+    : BASIC_STRING
+    | LITERAL_STRING
+    ;
+
+dotted_key
+    : simple_key (DOT simple_key)+
+    ;
+
+value
+    : string
+    | integer
+    | floating_point
+    | bool_
+    | date_time
+    | array_
+    | inline_table
+    ;
+
+string
+    : BASIC_STRING
+    | ML_BASIC_STRING
+    | LITERAL_STRING
+    | ML_LITERAL_STRING
+    ;
+
+integer
+    : DEC_INT
+    | HEX_INT
+    | OCT_INT
+    | BIN_INT
+    ;
+
+floating_point
+    : FLOAT
+    | INF
+    | NAN
+    ;
+
+bool_
+    : BOOLEAN
+    ;
+
+date_time
+    : OFFSET_DATE_TIME
+    | LOCAL_DATE_TIME
+    | LOCAL_DATE
+    | LOCAL_TIME
+    ;
+
+array_
+    : L_BRACKET array_values? comment_or_nl R_BRACKET
+    ;
+
+array_values
+    : comment_or_nl value nl_or_comment COMMA array_values comment_or_nl
+    | comment_or_nl value nl_or_comment COMMA?
+    ;
+
+comment_or_nl
+    : (COMMENT? NL)*
+    ;
+
+nl_or_comment
+    : (NL COMMENT?)*
+    ;
+
+table
+    : standard_table
+    | array_table
+    ;
+
+standard_table
+    : L_BRACKET key R_BRACKET
+    ;
+
+array_table
+    : DOUBLE_L_BRACKET key DOUBLE_R_BRACKET
+    ;
+
+/*
+ * TOML 1.1 / tomlc17:
+ * inline tables may contain newlines/comments and may end with a trailing comma.
+ */
+inline_table
+    : L_BRACE inline_table_ws inline_table_keyvals? inline_table_ws R_BRACE
+    ;
+
+inline_table_keyvals
+    : inline_table_keyval
+      (inline_table_ws COMMA inline_table_ws inline_table_keyval)*
+      inline_table_ws COMMA?
+    ;
+inline_table_keyval
+    : key EQUALS value
+    ;
+
+inline_table_ws
+    : (NL | COMMENT)*
+    ;
+
+# GENERATOR IMPLEMENTATION CONSTRAINTS — MUST FOLLOW
+
+These rules apply to HOW the generator is implemented. They do NOT change the
+TOML grammar or remove grammar-valid constructs.
+
+The generator must preserve the broad TOML grammar while ensuring that its
+Hypothesis strategies and Python source are executable.
+
+1. DEEP NESTING — CRITICAL
+The grammar allows recursive arrays and inline tables. Keep this recursive
+capability; do not remove recursive structures from the grammar.
+
+Use bounded/controlled Hypothesis recursion so the strategy itself remains
+executable. The generator should be able to produce deeper structures when
+previous structural feedback shows that deeper exploration is needed.
+
+Do NOT create unbounded recursion or an arbitrary huge recursive strategy
+just to increase the measured depth.
+
+2. CONTAINER SIZES
+Arrays and inline tables are ordinary grammar constructs. Vary their element
+counts across a reasonable range as part of normal structural exploration.
+
+Do NOT attempt to construct very large containers (thousands of elements).
+Building them exhausts memory once they nest inside other containers, and
+the parser rejects oversized containers cleanly, so nothing is learned that
+ordinary sizes do not already show.
+
+3. EXTREME FLOATS — CRITICAL
+Keep the required extreme numeric cases, including:
+    inf, -inf, nan, +nan, and 1e999
+where they belong to malformed exploration.
+
+Use separate Hypothesis branches for bounded finite floats and special
+values.
+
+NEVER use:
+    st.floats(..., allow_nan=True, min_value=...)
+or:
+    st.floats(..., allow_nan=True, max_value=...)
+
+because these are incompatible Hypothesis configurations.
+
+4. SEMANTIC CONFLICTS
+Do not remove semantic-conflict cases from the grammar.
+
+Generate duplicate keys, dotted-key conflicts, table/value conflicts,
+array-table/table conflicts, and inline-table extensions as deliberate
+near-valid malformed mutations.
+
+Keep the surrounding document valid and make the semantic conflict the
+intentional malformed change.
+
+5. CONTROL CHARACTERS AND UTF-8
+Keep required control-character and invalid-encoding cases as malformed
+exploration targets.
+
+Do not modify the grammar to eliminate them.
+
+Represent these cases using valid Python construction so that the resulting
+TOML/input data contains the intended malformed bytes or characters without
+making the generator source invalid.
+
+6. PYTHON SOURCE VALIDITY — CRITICAL
+The generated generator MUST always be valid, executable Python.
+
+Malformed TOML is DATA produced by the Python generator. It must never become
+invalid Python source.
+
+Therefore, Python-sensitive characters such as backslashes, quotes, escape
+sequences, control characters, and Unicode must be represented using valid
+Python string construction.
+
+For example, an invalid TOML escape must be represented as data using valid
+Python escaping; NEVER write an invalid Python escape directly into a Python
+string literal.
+
+7. HYPOTHESIS VALIDITY — CRITICAL
+Every Hypothesis strategy must be valid for the installed Hypothesis version.
+
+Do not combine incompatible strategy arguments or construct collections whose
+requested sizes Hypothesis cannot support.
+
+The generator must be executable BEFORE it is used for the 500-input campaign.
+
+IMPORTANT:
+Do not solve any of these implementation limitations by narrowing the TOML
+grammar. Preserve the required grammar and exploration targets; solve the
+limitations in the generator's construction of the test inputs.
+
+# REQUIRED STRUCTURE OF YOUR CODE
+
+Two parts follow. The FIXED PLUMBING block is Hypothesis mechanism and must
+be copied exactly. The FILL-IN sections are the TOML work: which values,
+which escapes, which productions, which malformed cases. That part is yours
+and is what the generator is judged on — do not simplify it.
+
+# ============================================================================
+# FIXED PLUMBING — COPY THIS ENTIRE BLOCK VERBATIM. DO NOT REDESIGN IT.
+# It contains no TOML content decisions; it only makes depth, size and
+# uniqueness reachable and safe.
+# ============================================================================
+from hypothesis import strategies as st
+
+# --- feedback-controlled knobs. The refinement loop rewrites these lines. ---
+MALFORMED_WEIGHT = 0.15   # share of documents routed to the malformed branch
+MAX_DEPTH = 8             # ceiling on drawn container nesting depth
+# ---------------------------------------------------------------------------
+
+def _bare_name():
+    return st.text(alphabet="abcdefghijklmnopqrstuvwxyz",
+                   min_size=1, max_size=6)
+
+def _unique_names(count, prefix):
+    """A STRATEGY producing `count` distinct TOML bare names.
+
+    Call as:  names = draw(_unique_names(5, "k"))
+    It RETURNS a strategy, so pass it to draw(). Never pass draw into it.
+    Independently drawn keys collide constantly, and one collision makes the
+    whole document invalid at that line, so nothing after it is parsed.
+    """
+    return st.lists(_bare_name(), min_size=count, max_size=count).map(
+        lambda stems: [f"{prefix}{i}_{s}" for i, s in enumerate(stems)]
+    )
+
+@st.composite
+def _nest(draw, inner_strategy, max_depth=None):
+    """Wrap a value in a DRAWN number of container levels, 1..MAX_DEPTH.
+
+    st.recursive with max_leaves cannot control depth: Hypothesis biases
+    recursion shallow, so observed depth stays near the low end whatever the
+    leaf budget. Drawing the depth makes it a property the feedback loop can
+    actually move by rewriting MAX_DEPTH.
+    """
+    limit = MAX_DEPTH if max_depth is None else max_depth
+    depth = draw(st.integers(min_value=1, max_value=max(1, limit)))
+    text = draw(inner_strategy)
+    for _ in range(depth):
+        if draw(st.booleans()):
+            text = f"[{text}]"
+        else:
+            text = f"{{ {draw(_bare_name())} = {text} }}"
+    return text
+
+@st.composite
+def _toml_documents(draw):
+    if draw(st.floats(min_value=0.0, max_value=1.0)) < MALFORMED_WEIGHT:
+        return draw(_malformed_document())
+    return draw(valid_document())
+# ============================================================================
+# END FIXED PLUMBING
+# ============================================================================
+
+
+# ---- FILL 1: VALID LEAF values (no nesting). VALID ONLY. -------------------
+# Cover from the grammar: bool; dec/hex/oct/bin integers WITHIN int64 range;
+# finite floats; inf, -inf, nan, +nan (all valid TOML 1.1 floats);
+# basic/literal/multiline strings with escapes (\e, \xHH, \uXXXX,
+# \UXXXXXXXX, \b \f \n \r \t); datetimes including secondless time;
+# unicode bare keys.
+#
+# st_leaf is the base of every nested structure, so it MUST NOT contain
+# 1e999, integers outside int64, or anything else tomlc17 rejects. Those go
+# in the malformed strategies, which nesting cannot reach.
+#
+# One branch written correctly, as a pattern for the rest:
+#     st.integers(min_value=-2**63, max_value=2**63 - 1).map(str)
+# Use min_value/max_value for integers (NOT min_size/max_size), and
+# allow_infinity (NOT allow_inf) for floats. Do not combine allow_nan=True
+# with min_value/max_value. Never import random.
+st_leaf = st.one_of( ... )   # <FILL from the grammar>
+
+# ---- FILL 2: VALID VALUE — a leaf, or a nested container of values --------
+# Use _nest() for depth. You may also use st.recursive for shape variety,
+# but depth comes from _nest.
+def st_value():
+    return st.one_of(
+        st_leaf,
+        _nest(st_leaf),
+        ...   # <FILL: arrays and inline tables holding multiple values>
+    )
+
+# ---- FILL 3: VALID DOCUMENT ----------------------------------------------
+# Draw a count, take names from _unique_names(n, "k") for key-value entries
+# and _unique_names(m, "t") for [table] / [[array-table]] headers — separate
+# prefixes keep the two namespaces from colliding. Never draw a name any
+# other way here. Dotted keys join names from the SAME key pool, and a dotted
+# key's first segment must not also stand alone as a key.
+#     n_keys = draw(st.integers(min_value=1, max_value=12))
+#     keys   = draw(_unique_names(n_keys, "k"))
+@st.composite
+def valid_document(draw):
+    ...   # <FILL: entries over st_value(), plus tables and array-tables>
+
+# ---- FILL 4: MALFORMED strategies — one deliberate defect each ------------
+# Each PARAMETERISED (draw the keys and values, so the surrounding structure
+# varies): a bare st.just("x = TRUE") emits one identical input for the whole
+# campaign. These are the ONLY place parser-invalid values may appear.
+# Cover the cases in the ADAPTATION NOTES below.
+@st.composite
+def _malformed_duplicate_key(draw):
+    ...   # <FILL: and one composite per case in the notes>
+
+def _malformed_document():
+    return st.one_of( ... )   # <FILL: all malformed strategies>
+
+toml_documents = _toml_documents()   # MUST be named exactly this
+# REQUIREMENTS (each is mandatory)
+1. Use st.recursive AND/OR @composite for arrays and inline tables. Never flatten
+   recursion into a flat random string.
+2. Output is TOML *text* (str), not Python objects.
+3. Explicitly include, as distinct branches:
+   - empty containers: [] and {}
+   - deep nesting (arrays and inline tables many levels deep)
+   - extreme numbers: INT64 max (9223372036854775807) and +1 over it; 1e999
+   - unicode and escaped chars: \e, \xHH, \uXXXX, \UXXXXXXXX, and raw unicode
+   - a controlled minority of near-valid-but-malformed inputs (see the notes below); these must be derived from valid structures and should differ from valid inputs by a small, deliberate mutation
+4. Maintain a strong validity bias: most generated documents should be
+   grammar-valid. Malformed inputs must remain a minority and should target
+   specific documented parser boundaries rather than arbitrary corruption.
+5. Expose ONE top-level strategy named exactly `toml_documents`.
+6. Add: if __name__ == "__main__":  printing 10 toml_documents.example() outputs,
+   so the generator can be spot-checked before use.
+# ADAPTATION NOTES (grammar vs the real tomlc17 — generate these deliberately)
+These are grammar-VALID but tomlc17-INVALID. Emit them deliberately as a
+minority of the generated population, ONLY from the malformed strategies.
+
+CRITICAL: these same conflicts must NEVER arise by accident in
+valid_document(). A duplicate key produced by chance is indistinguishable
+in the output from one produced on purpose, but it destroys the valid
+document it appears in and masks every later line. If your valid documents
+can collide, the generator is emitting invalid TOML while believing it is
+valid. Uniqueness in valid_document() is what makes deliberate conflicts
+meaningful.
+
+Preserve the surrounding valid TOML structure and vary the semantic conflict
+so that multiple distinct boundary cases are explored. (They test rejection
+handling.):
+   - duplicate keys:            x = 1  /  x = 2
+   - dotted-key duplicates:     a.b = 1  /  a.b = 2
+   - inline-table extension:    x = { a = 1 }  /  x.a = 2
+   - table vs value conflict:   x = 1  /  [x]
+   - array-table vs table conflict
+Implementation LIMITS to STRADDLE (the grammar is unbounded; generate values
+just below AND just above each boundary — that is where bugs hide):
+   - nesting depth: generate deeply nested structures; the loop tunes the
+     ceiling through MAX_DEPTH
+   - dotted-key parts 10 -> generate 9..12 parts
+TOML 1.1 features tomlc17 supports — make sure they appear:
+   - \e and \xHH escapes; multi-line inline tables; trailing comma in inline
+     tables; secondless time (14:15); unicode bare keys.
+
+
+# OUTPUT
+Return only the complete Python module. No prose, no markdown code fences.
+
+# STRATEGY DESIGN
+The strategy must be composable and easy to refine in later LLM iterations.
+Keep major TOML constructs represented by separate Hypothesis strategies or
+helper functions so that future feedback can modify individual structural
+regions without replacing the entire generator.
+
+
+# SOURCE-LANGUAGE VALIDITY
+IMPORTANT: When deliberately generating malformed TOML containing invalid
+escape sequences, the malformed TOML must still be represented as valid
+Python source.
+
+In particular, NEVER write an invalid escape such as `"\xGG"` directly inside
+a Python string literal. Python will interpret `\x` itself and the generator
+will fail with a SyntaxError before producing any TOML.
+
+The rule applies generally to all Python-sensitive characters and escape
+sequences: construct the desired malformed TOML text using valid Python
+escaping or another valid string-construction method. The generator must
+remain valid Python even when its output is deliberately invalid TOML.

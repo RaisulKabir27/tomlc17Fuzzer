@@ -1,0 +1,134 @@
+{
+  "rounds": 5,
+  "inventory_size": 32,
+  "reached_count": 18,
+  "unreached_count": 14,
+  "coverage_fraction": 0.562,
+  "reached": [
+    {
+      "category": "DUPLICATE_KEY",
+      "total": 404,
+      "first_seen_round": 1,
+      "last_seen_round": 5
+    },
+    {
+      "category": "STACK_OVERFLOW",
+      "total": 55,
+      "first_seen_round": 3,
+      "last_seen_round": 5
+    },
+    {
+      "category": "TABLE_CONFLICT",
+      "total": 52,
+      "first_seen_round": 1,
+      "last_seen_round": 5
+    },
+    {
+      "category": "TOO_MANY_KEY_PARTS",
+      "total": 24,
+      "first_seen_round": 2,
+      "last_seen_round": 4
+    },
+    {
+      "category": "INT_PARSE",
+      "total": 19,
+      "first_seen_round": 1,
+      "last_seen_round": 5
+    },
+    {
+      "category": "FLOAT_PARSE",
+      "total": 16,
+      "first_seen_round": 1,
+      "last_seen_round": 5
+    },
+    {
+      "category": "BAD_ESCAPE",
+      "total": 12,
+      "first_seen_round": 2,
+      "last_seen_round": 5
+    },
+    {
+      "category": "INLINE_TABLE_EXTENSION",
+      "total": 12,
+      "first_seen_round": 2,
+      "last_seen_round": 4
+    },
+    {
+      "category": "INVALID_BOOLEAN",
+      "total": 11,
+      "first_seen_round": 3,
+      "last_seen_round": 5
+    },
+    {
+      "category": "BAD_HEX_ESCAPE",
+      "total": 10,
+      "first_seen_round": 2,
+      "last_seen_round": 4
+    },
+    {
+      "category": "TABLE_LOCATION",
+      "total": 7,
+      "first_seen_round": 5,
+      "last_seen_round": 5
+    },
+    {
+      "category": "COMMA_ERROR",
+      "total": 6,
+      "first_seen_round": 2,
+      "last_seen_round": 3
+    },
+    {
+      "category": "ENDL_EXPECTED",
+      "total": 6,
+      "first_seen_round": 3,
+      "last_seen_round": 5
+    },
+    {
+      "category": "UNTERMINATED_STRING",
+      "total": 5,
+      "first_seen_round": 4,
+      "last_seen_round": 4
+    },
+    {
+      "category": "ARRAY_TABLE_MISMATCH",
+      "total": 4,
+      "first_seen_round": 2,
+      "last_seen_round": 2
+    },
+    {
+      "category": "EXPECT_EQUALS",
+      "total": 4,
+      "first_seen_round": 3,
+      "last_seen_round": 4
+    },
+    {
+      "category": "BAD_CONTROL_CHAR_COMMENT",
+      "total": 2,
+      "first_seen_round": 5,
+      "last_seen_round": 5
+    },
+    {
+      "category": "MISSING_KEY",
+      "total": 2,
+      "first_seen_round": 2,
+      "last_seen_round": 4
+    }
+  ],
+  "unreached": [
+    "ARRAY_PARSE",
+    "CANNOT_EXTEND_ARRAY",
+    "CONTAINER_TOO_LARGE",
+    "DOTTED_KEY_TYPE",
+    "INTERNAL_ERROR",
+    "INVALID_DATETIME",
+    "INVALID_STRING_CHAR",
+    "INVALID_VALUE",
+    "MISSING_BRACKET",
+    "MISSING_VALUE",
+    "OUT_OF_MEMORY",
+    "UNEXPECTED_NEWLINE",
+    "UNTERMINATED",
+    "UTF8_ERROR"
+  ],
+  "unreached_watch": []
+}

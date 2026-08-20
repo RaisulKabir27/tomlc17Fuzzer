@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "bootstrap": {
+    "gate_passed": true,
+    "accepted_attempt": 1,
+    "attempts_used": 1
+  },
+  "valid_path": {
+    "rate": 1.0,
+    "isolated": true,
+    "top_rejections": []
+  },
+  "campaign": {
+    "records_count": 500
+  },
+  "best_version": 1,
+  "best_score": [
+    0,
+    1,
+    14,
+    69
+  ],
+  "observation": {
+    "accepted": 362,
+    "rejected": 138,
+    "crashed": 0,
+    "acceptance_rate": 0.724,
+    "validity_rate": 0.724,
+    "new_kpath_count": 69,
+    "rare_kpath_count": 0
+  },
+  "signals": [
+    {
+      "type": "NEW_ACCEPTED_KPATH",
+      "priority": 2
+    },
+    {
+      "type": "NEW_ERROR",
+      "priority": 3
+    },
+    {
+      "type": "NEW_ERROR",
+      "priority": 3
+    }
+  ],
+  "instructions": [
+    "Generate more VALID TOML that extends recently reached grammar structure with controlled variation (new combinations, deeper nesting), not exact duplicates. Focus on structure like: nested arrays; an array followed by a basic string; an array followed by a dotted key. ",
+    "A new parser-rejection category (DUPLICATE_KEY) appeared. Example that triggered it: `a = false\\na = false`. Probe this boundary: generate NEAR-VALID TOML variants that stay close to valid but vary the structure, rather than repeating the same malformed pattern.",
+    "A new parser-rejection category (FLOAT_PARSE) appeared. Example that triggered it: `x = 1e999`. Probe this boundary: generate NEAR-VALID TOML variants that stay close to valid but vary the structure, rather than repeating the same malformed pattern."
+  ],
+  "malformed_channel": "active (valid_path)",
+  "gate_rate": 1.0,
+  "gate_basis": "valid_path",
+  "malformed_exploration": {
+    "this_round": {
+      "DUPLICATE_KEY": 107,
+      "FLOAT_PARSE": 4,
+      "TABLE_CONFLICT": 24,
+      "INT_PARSE": 3
+    },
+    "categories_reached": 4,
+    "categories_total": 32,
+    "coverage_fraction": 0.125,
+    "unexplored": [
+      "ARRAY_PARSE",
+      "ARRAY_TABLE_MISMATCH",
+      "BAD_CONTROL_CHAR_COMMENT",
+      "BAD_ESCAPE",
+      "BAD_HEX_ESCAPE",
+      "CANNOT_EXTEND_ARRAY",
+      "COMMA_ERROR",
+      "CONTAINER_TOO_LARGE",
+      "DOTTED_KEY_TYPE",
+      "ENDL_EXPECTED",
+      "EXPECT_EQUALS",
+      "INLINE_TABLE_EXTENSION",
+      "INTERNAL_ERROR",
+      "INVALID_BOOLEAN",
+      "INVALID_DATETIME",
+      "INVALID_STRING_CHAR",
+      "INVALID_VALUE",
+      "MISSING_BRACKET",
+      "MISSING_KEY",
+      "MISSING_VALUE",
+      "OUT_OF_MEMORY",
+      "STACK_OVERFLOW",
+      "TABLE_LOCATION",
+      "TOO_MANY_KEY_PARTS",
+      "UNEXPECTED_NEWLINE",
+      "UNTERMINATED",
+      "UNTERMINATED_STRING",
+      "UTF8_ERROR"
+    ]
+  },
+  "structural_metrics": {
+    "inputs_measured": 362,
+    "depth": {
+      "max": 14,
+      "mean": 4.82,
+      "distribution": {
+        "0": 60,
+        "1-2": 82,
+        "6-10": 150,
+        "3-5": 50,
+        "11-20": 20
+      }
+    },
+    "container_size": {
+      "max": 3,
+      "mean": 1.91,
+      "distribution": {
+        "0": 60,
+        "1-5": 302
+      }
+    },
+    "dotted_key_parts": {
+      "max": 2,
+      "distribution": {
+        "1": 101,
+        "2": 261
+      }
+    },
+    "document_length": {
+      "max": 678,
+      "mean": 208.7
+    }
+  },
+  "capability": {
+    "malformed_count": 5,
+    "missing_core": [
+      "valid_leaf",
+      "valid_value"
+    ],
+    "missing_malformed": [
+      "_malformed_dotted_key_dup",
+      "_malformed_inline_table_ext",
+      "_malformed_table_conflict",
+      "_malformed_array_table_conflict",
+      "_malformed_int_overflow",
+      "_malformed_float_overflow",
+      "_malformed_deep_nesting",
+      "_malformed_long_dotted_key"
+    ],
+    "uses_st_recursive": true,
+    "forbidden_imports": [],
+    "regressions": []
+  },
+  "next_max_depth": 16,
+  "next_malformed_weight": 0.2,
+  "feedback_sections": {
+    "capability": true,
+    "signals": 3,
+    "structural": true,
+    "malformed_exploration": true
+  },
+  "elapsed_seconds": 24.0,
+  "budget": {
+    "cost_usd": 0.004017,
+    "total_tokens": 14219
+  }
+}

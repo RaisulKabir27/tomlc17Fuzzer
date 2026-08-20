@@ -1,0 +1,6 @@
+.venv_win/
+.venv312/
+__pycache__/
+*.pyc
+*.pyo
+.hypothesis/

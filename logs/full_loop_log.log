@@ -1,0 +1,1254 @@
+
+============================================================
+  PHASE 1 — V1 BOOTSTRAP (hard gate)
+============================================================
+
+--- V1 attempt 1/3 ---
+  prompt: 23,847 chars (~5,961 tokens)  sections: ['seed']
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\core.py:2101: HypothesisDeprecationWarning: There is no reason to use @st.composite on a function which does not call the provided draw() function internally.
+  note_deprecation(
+  generated and validated: strategies\generator_v1.py
+  usage: {'input_tokens': 7026, 'output_tokens': 1507, 'thought_tokens': 5686, 'total_tokens': 14219}
+  [budget] calls=1  tokens=14219  spent=$0.0040  remaining=$4.9960
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\core.py:2101: HypothesisDeprecationWarning: There is no reason to use @st.composite on a function which does not call the provided draw() function internally.
+  note_deprecation(
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+Validation: PASS  gate_rate=1.0  floor=0.6  (mixture=0.66)
+    DUPLICATE_KEY: 11
+    FLOAT_PARSE: 3
+    TABLE_CONFLICT: 2
+    INT_PARSE: 1
+
+V1 accepted on attempt 1.
+Log saved: logs\v1_bootstrap.json
+
+============================================================
+  ITERATION 1
+============================================================
+
+Running 500-input campaign...
+Campaign complete: 500 records in 21.5s
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\core.py:2101: HypothesisDeprecationWarning: There is no reason to use @st.composite on a function which does not call the provided draw() function internally.
+  note_deprecation(
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\strategies.py:524: HypothesisDeprecationWarning: extend=lambda children: <unknown> doesn't use it's argument, and thus can't actually recurse!
+  self.do_validate()
+
+valid-path rate = 1.000 (measured with MALFORMED_WEIGHT forced to 0)
+
+accepted   = 362
+rejected   = 138
+crashed    = 0
+validity   = 0.724
+new kpaths = 69
+
+Selected signals:
+  NEW_ACCEPTED_KPATH  priority=2
+  NEW_ERROR  priority=3
+  NEW_ERROR  priority=3
+
+structural reach: depth max 14, container max 3
+rejection categories reached: 4/32 (12.5%)
+No crashes to shrink.
+Next MAX_DEPTH: 16 (accepted depth reached 14)
+
+Next MALFORMED_WEIGHT: 0.20
+Log saved: logs\iteration_1.json
+
+Iteration 1 complete in 24.0s
+
+============================================================
+  ITERATION 2
+============================================================
+Generating from previous version + feedback...
+  MALFORMED_WEIGHT: 0.20
+  prompt: 34,348 chars (~8,587 tokens)  sections: ['capability', 'signals', 'structural', 'malformed_exploration', 'max_depth', 'weight']
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\core.py:2101: HypothesisDeprecationWarning: There is no reason to use @st.composite on a function which does not call the provided draw() function internally.
+  note_deprecation(
+  generated and validated: strategies\generator_v2.py
+  usage: {'input_tokens': 10002, 'output_tokens': 2121, 'thought_tokens': 6196, 'total_tokens': 18319}
+  [budget] calls=2  tokens=32538  spent=$0.0097  remaining=$4.9903
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\core.py:2101: HypothesisDeprecationWarning: There is no reason to use @st.composite on a function which does not call the provided draw() function internally.
+  note_deprecation(
+
+Running 500-input campaign...
+Campaign complete: 500 records in 21.7s
+
+valid-path rate = 0.980 (measured with MALFORMED_WEIGHT forced to 0)
+  rejections inside the VALID path — these are defects, not exploration:
+    DUPLICATE_KEY: 1
+
+accepted   = 363
+rejected   = 137
+crashed    = 0
+validity   = 0.726
+new kpaths = 0
+
+Selected signals:
+  NEW_ERROR  priority=3
+  NEW_ERROR  priority=3
+  NEW_ERROR  priority=3
+
+structural reach: depth max 29, container max 5
+rejection categories reached: 11/32 (34.4%)
+No crashes to shrink.
+Next MAX_DEPTH: 32 (accepted depth reached 29)
+
+Next MALFORMED_WEIGHT: 0.20
+Log saved: logs\iteration_2.json
+
+Iteration 2 complete in 55.2s
+
+============================================================
+  ITERATION 3
+============================================================
+Generating from previous version + feedback...
+  MALFORMED_WEIGHT: 0.20
+  prompt: 36,356 chars (~9,089 tokens)  sections: ['capability', 'signals', 'structural', 'malformed_exploration', 'max_depth', 'weight']
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\core.py:2101: HypothesisDeprecationWarning: There is no reason to use @st.composite on a function which does not call the provided draw() function internally.
+  note_deprecation(
+  generated and validated: strategies\generator_v3.py
+  usage: {'input_tokens': 10571, 'output_tokens': 2228, 'thought_tokens': 4996, 'total_tokens': 17795}
+  [budget] calls=3  tokens=50333  spent=$0.0157  remaining=$4.9843
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\core.py:2101: HypothesisDeprecationWarning: There is no reason to use @st.composite on a function which does not call the provided draw() function internally.
+  note_deprecation(
+
+Capability loss (advisory) — running campaign anyway:
+  - malformed strategies dropped since the previous version: _malformed_array_table_conflict, _malformed_deep_nesting, _malformed_long_dotted_key. Reinstate them; each is an exploration vector the campaign cannot otherwise reach.
+
+Running 500-input campaign...
+Campaign complete: 500 records in 26.8s
+
+valid-path rate = 0.880 (measured with MALFORMED_WEIGHT forced to 0)
+  rejections inside the VALID path — these are defects, not exploration:
+    STACK_OVERFLOW: 3
+    DUPLICATE_KEY: 3
+
+accepted   = 358
+rejected   = 142
+crashed    = 0
+validity   = 0.716
+new kpaths = 11
+
+Selected signals:
+  NEW_ACCEPTED_KPATH  priority=2
+  NEW_ERROR  priority=3
+  NEW_ERROR  priority=3
+
+CAPABILITY REGRESSION:
+  - malformed strategies dropped since the previous version: _malformed_array_table_conflict, _malformed_deep_nesting, _malformed_long_dotted_key. Reinstate them; each is an exploration vector the campaign cannot otherwise reach.
+
+structural reach: depth max 58, container max 5
+rejection categories reached: 15/32 (46.9%)
+No crashes to shrink.
+Next MAX_DEPTH: 32 (accepted depth reached 58)  [backing off: 3 STACK_OVERFLOW in the valid path]
+
+Next MALFORMED_WEIGHT: 0.15
+Log saved: logs\iteration_3.json
+
+Iteration 3 complete in 56.2s
+
+============================================================
+  ITERATION 4
+============================================================
+Generating from previous version + feedback...
+  MALFORMED_WEIGHT: 0.15
+  prompt: 37,082 chars (~9,270 tokens)  sections: ['capability', 'signals', 'structural', 'malformed_exploration', 'max_depth', 'weight']
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\core.py:2101: HypothesisDeprecationWarning: There is no reason to use @st.composite on a function which does not call the provided draw() function internally.
+  note_deprecation(
+  generated and validated: strategies\generator_v4.py
+  usage: {'input_tokens': 10790, 'output_tokens': 2593, 'thought_tokens': 3556, 'total_tokens': 16939}
+  [budget] calls=4  tokens=67272  spent=$0.0223  remaining=$4.9777
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\core.py:2101: HypothesisDeprecationWarning: There is no reason to use @st.composite on a function which does not call the provided draw() function internally.
+  note_deprecation(
+
+Running 500-input campaign...
+Campaign complete: 500 records in 25.8s
+
+valid-path rate = 0.960 (measured with MALFORMED_WEIGHT forced to 0)
+  rejections inside the VALID path — these are defects, not exploration:
+    STACK_OVERFLOW: 2
+
+accepted   = 386
+rejected   = 114
+crashed    = 0
+validity   = 0.772
+new kpaths = 7
+
+Selected signals:
+  NEW_ACCEPTED_KPATH  priority=2
+  NEW_ERROR  priority=3
+  NEW_ERROR_CONTEXT  priority=4
+
+structural reach: depth max 54, container max 5
+rejection categories reached: 16/32 (50.0%)
+No crashes to shrink.
+Next MAX_DEPTH: 32 (accepted depth reached 54)  [backing off: 2 STACK_OVERFLOW in the valid path]
+
+Next MALFORMED_WEIGHT: 0.20
+Log saved: logs\iteration_4.json
+
+Iteration 4 complete in 53.0s
+
+============================================================
+  ITERATION 5
+============================================================
+Generating from previous version + feedback...
+  MALFORMED_WEIGHT: 0.20
+  prompt: 36,879 chars (~9,219 tokens)  sections: ['capability', 'signals', 'structural', 'malformed_exploration', 'max_depth', 'weight']
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\core.py:2101: HypothesisDeprecationWarning: There is no reason to use @st.composite on a function which does not call the provided draw() function internally.
+  note_deprecation(
+  generated and validated: strategies\generator_v5.py
+  usage: {'input_tokens': 10728, 'output_tokens': 2128, 'thought_tokens': 2812, 'total_tokens': 15668}
+  [budget] calls=5  tokens=82940  spent=$0.0281  remaining=$4.9719
+D:\Documents\Fuzzing Assignment Practice\.venv_win\Lib\site-packages\hypothesis\strategies\_internal\core.py:2101: HypothesisDeprecationWarning: There is no reason to use @st.composite on a function which does not call the provided draw() function internally.
+  note_deprecation(
+
+Capability loss (advisory) — running campaign anyway:
+  - malformed strategies dropped since the previous version: _malformed_array_table_conflict, _malformed_deep_nesting, _malformed_dotted_key_dup, _malformed_inline_table_ext, _malformed_long_dotted_key. Reinstate them; each is an exploration vector the campaign cannot otherwise reach.
+  - malformed strategy count fell from 21 to 12
+
+Running 500-input campaign...
+Campaign complete: 500 records in 24.9s
+
+valid-path rate = 0.900 (measured with MALFORMED_WEIGHT forced to 0)
+  rejections inside the VALID path — these are defects, not exploration:
+    STACK_OVERFLOW: 5
+
+accepted   = 380
+rejected   = 120
+crashed    = 0
+validity   = 0.760
+new kpaths = 0
+
+Selected signals:
+  NEW_ERROR  priority=3
+  NEW_ERROR  priority=3
+  NEW_ERROR_CONTEXT  priority=4
+
+CAPABILITY REGRESSION:
+  - malformed strategies dropped since the previous version: _malformed_array_table_conflict, _malformed_deep_nesting, _malformed_dotted_key_dup, _malformed_inline_table_ext, _malformed_long_dotted_key. Reinstate them; each is an exploration vector the campaign cannot otherwise reach.
+  - malformed strategy count fell from 21 to 12
+
+structural reach: depth max 54, container max 5
+rejection categories reached: 18/32 (56.2%)
+No crashes to shrink.
+Next MAX_DEPTH: 32 (accepted depth reached 54)  [backing off: 5 STACK_OVERFLOW in the valid path]
+
+Next MALFORMED_WEIGHT: 0.15
+Log saved: logs\iteration_5.json
+
+Iteration 5 complete in 51.6s
+
+============================================================
+  LOOP COMPLETE
+============================================================
+Campaign iterations:  5/5
+Generation attempts:  5
+Total tokens:         82940
+  input:              49117
+  output:             10577
+  thought:            23246
+Total cost:           $0.0281 of $5.00
+
+Evolution:
+  V1: valid_path=1.000  mixture=0.724  crashed=0  new_kpaths=69  depth=14  container=3  categories=4  weight=0.20
+  V2: valid_path=0.980  mixture=0.726  crashed=0  new_kpaths=0  depth=29  container=5  categories=11  weight=0.20
+  V3: valid_path=0.880  mixture=0.716  crashed=0  new_kpaths=11  depth=58  container=5  categories=15  weight=0.15
+        regression: malformed strategies dropped since the previous version: _malformed_array_table_conflict, _malformed_deep_nesting, _malformed_long_dotted_key. Reinstate them; each is an exploration vector the campaign cannot otherwise reach.
+  V4: valid_path=0.960  mixture=0.772  crashed=0  new_kpaths=7  depth=54  container=5  categories=16  weight=0.20
+  V5: valid_path=0.900  mixture=0.760  crashed=0  new_kpaths=0  depth=54  container=5  categories=18  weight=0.15
+        regression: malformed strategies dropped since the previous version: _malformed_array_table_conflict, _malformed_deep_nesting, _malformed_dotted_key_dup, _malformed_inline_table_ext, _malformed_long_dotted_key. Reinstate them; each is an exploration vector the campaign cannot otherwise reach.
+        regression: malformed strategy count fell from 21 to 12
+
+Rejection-category coverage after 5 campaigns: 18/32 (56.2%)
+
+  Reached:
+    DUPLICATE_KEY              n=404    rounds 1-5
+    STACK_OVERFLOW             n=55     rounds 3-5
+    TABLE_CONFLICT             n=52     rounds 1-5
+    TOO_MANY_KEY_PARTS         n=24     rounds 2-4
+    INT_PARSE                  n=19     rounds 1-5
+    FLOAT_PARSE                n=16     rounds 1-5
+    BAD_ESCAPE                 n=12     rounds 2-5
+    INLINE_TABLE_EXTENSION     n=12     rounds 2-4
+    INVALID_BOOLEAN            n=11     rounds 3-5
+    BAD_HEX_ESCAPE             n=10     rounds 2-4
+    TABLE_LOCATION             n=7      rounds 5-5
+    COMMA_ERROR                n=6      rounds 2-3
+    ENDL_EXPECTED              n=6      rounds 3-5
+    UNTERMINATED_STRING        n=5      rounds 4-4
+    ARRAY_TABLE_MISMATCH       n=4      rounds 2-2
+    EXPECT_EQUALS              n=4      rounds 3-4
+    BAD_CONTROL_CHAR_COMMENT   n=2      rounds 5-5
+    MISSING_KEY                n=2      rounds 2-4
+
+  Never reached (14) — targeted by the exploration policy throughout, still not triggered:
+    ARRAY_PARSE
+    CANNOT_EXTEND_ARRAY
+    CONTAINER_TOO_LARGE
+    DOTTED_KEY_TYPE
+    INTERNAL_ERROR
+    INVALID_DATETIME
+    INVALID_STRING_CHAR
+    INVALID_VALUE
+    MISSING_BRACKET
+    MISSING_VALUE
+    OUT_OF_MEMORY
+    UNEXPECTED_NEWLINE
+    UNTERMINATED
+    UTF8_ERROR

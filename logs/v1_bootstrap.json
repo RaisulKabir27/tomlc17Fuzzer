@@ -1,0 +1,66 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "usage": {
+        "input_tokens": 7026,
+        "output_tokens": 1507,
+        "thought_tokens": 5686,
+        "total_tokens": 14219
+      },
+      "cost_usd": 0.004017,
+      "valid_path_isolated": true,
+      "knob_wired": true,
+      "gate_rate": 1.0,
+      "floor": 0.6,
+      "passed": true,
+      "total_generated": 50,
+      "overall_accepted": 33,
+      "overall_rejected": 17,
+      "overall_crashed": 0,
+      "acceptance_rate": 0.66,
+      "encoding_errors": 0,
+      "harness_errors": 0,
+      "top_rejections": [
+        [
+          "DUPLICATE_KEY",
+          11
+        ],
+        [
+          "FLOAT_PARSE",
+          3
+        ],
+        [
+          "TABLE_CONFLICT",
+          2
+        ],
+        [
+          "INT_PARSE",
+          1
+        ]
+      ],
+      "branches": {
+        "max_depth": 14,
+        "max_container": 3,
+        "max_dotted_key_parts": 2,
+        "saw_array": true,
+        "saw_inline_table": true,
+        "saw_table_header": true,
+        "saw_array_table": true,
+        "saw_multiline_string": false,
+        "saw_escape": true,
+        "saw_datetime_like": true
+      },
+      "valid_path_accepted": 50,
+      "valid_path_rejected": 0,
+      "valid_path_rate": 1.0,
+      "valid_path_top_rejections": [],
+      "missing_features": [
+        "saw_multiline_string"
+      ]
+    }
+  ],
+  "max_attempts": 3,
+  "accepted_attempt": 1,
+  "gate_passed": true
+}
